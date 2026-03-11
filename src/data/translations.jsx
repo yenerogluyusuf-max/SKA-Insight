@@ -208,7 +208,7 @@ export const translations = {
       geminiTitle: "Strategische Ersteinschätzung"
     },
     footer: {
-      rights: `© ${new Date().getFullYear()} SKA Insights GbR. Alle Rechte vorbehalten.`,
+      rights: `© ${new Date().getFullYear()} SKA Insight GbR. Alle Rechte vorbehalten.`,
       links: {
         imprint: "Impressum",
         privacy: "Datenschutz"
@@ -219,7 +219,7 @@ export const translations = {
       content: (
         <>
           <h3 className="text-lg font-bold mb-2">Angaben gemäß § 5 TMG</h3>
-          <p>SKA Insights GbR<br />Friedrich-Karl-Straße 25<br />50739 Köln<br />Deutschland</p>
+          <p>SKA Insight GbR<br />Friedrich-Karl-Straße 25<br />50739 Köln<br />Deutschland</p>
           <h3 className="text-lg font-bold mt-4 mb-2">Vertreten durch die Gesellschafter:</h3>
           <p>Abdullah Şentürk, Metin Aydin</p>
           <h3 className="text-lg font-bold mt-4 mb-2">Kontakt</h3>
@@ -467,7 +467,7 @@ export const translations = {
       geminiTitle: "Initial Strategic Assessment"
     },
     footer: {
-      rights: `© ${new Date().getFullYear()} SKA Insights GbR. All rights reserved.`,
+      rights: `© ${new Date().getFullYear()} SKA Insight GbR. All rights reserved.`,
       links: {
         imprint: "Imprint",
         privacy: "Privacy Policy"
@@ -697,7 +697,7 @@ export const translations = {
       geminiTitle: "Stratejik Ön Değerlendirme"
     },
     footer: {
-      rights: `© ${new Date().getFullYear()} SKA Insights GbR. Tüm hakları saklıdır.`,
+      rights: `© ${new Date().getFullYear()} SKA Insight GbR. Tüm hakları saklıdır.`,
       links: {
         imprint: "Künye",
         privacy: "Gizlilik Politikası"
