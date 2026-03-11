@@ -103,7 +103,7 @@ export const translations = {
           long_bio: "Langjährige diplomatische und außenpolitische Erfahrungen haben mich in diversen Kompetenzbereichen wie Verhandlungstechniken, Networking, Analyse, Verwaltung, Organisationsplanung und Projektmanagement geschult. Durch meine dienstliche Tätigkeit als Generalkonsul in Köln und als Botschaftsrat in Berlin konnte ich in den letzten zehn Jahren enge Kontakte zu deutschen und türkischen Geschäfts-, Wirtschafts-, Politik- und Medienkreisen aufbauen. Meine aktive Teilnahme an den deutsch-türkischen Beziehungen haben zu einem tiefgreifenden Verständnis beider Kulturen, Gesellschaften und Geschäftswelten beigetragen. Dank dieser Kenntnisse und meiner beruflichen Kompetenz bin ich in der Lage – sowohl im europäisch-türkischen Raum, als auch darüber hinaus – Werte und Visionen auf höchster politischer, wirtschaftlicher und gesellschaftlicher Ebene zu vermitteln, diesbezüglich Vertrauen aufzubauen und Projekte zu entwickeln, und diese durch Netzwerke zu fördern.",
           skills: ["Verhandlungstechniken", "Networking & Public Affairs", "Politische Analyse", "Projektmanagement", "Organisationsplanung", "Krisenmanagement"],
           contact: {
-            email: "info@ska-insights.com"
+            email: "info@skainsight.de"
           },
           cv: [
             {
@@ -153,7 +153,7 @@ export const translations = {
           long_bio: "Metin Aydin ist eine erfahrene Führungskraft im Corporate-Umfeld mit einem starken Fokus auf Personal- und Organisationsentwicklung. Bei der Deutschen Telekom verantwortet er die strategische Kompetenzentwicklung, um das Unternehmen zukunftsfähig zu machen. Als Vorsitzender von NETU West engagiert er sich zudem für die Vernetzung europäisch-türkischer Unternehmen.",
           skills: ["Strategisches Skillmanagement", "Talent & Leadership Development", "Change Management", "Agile Transformation", "Corporate-Recruiting", "Vertriebsstrategie"],
           contact: {
-            email: "info@ska-insights.de"
+            email: "info@skainsight.de"
           },
           cv: [
             {
@@ -198,7 +198,7 @@ export const translations = {
         send: "Nachricht senden",
         sending: "Wird gesendet..."
       },
-      meta: "Oder schreiben Sie direkt an: info@ska-insights.com",
+      meta: "Oder schreiben Sie direkt an: info@skainsight.de",
       success: "Vielen Dank! Ihre Nachricht wurde empfangen.",
       error: "Fehler beim Senden.",
       geminiCta: "Strategische Einblicke generieren",
@@ -219,11 +219,11 @@ export const translations = {
       content: (
         <>
           <h3 className="text-lg font-bold mb-2">Angaben gemäß § 5 TMG</h3>
-          <p>SKA Insights GbR<br />Neusser Straße 13<br />50670 Köln<br />Deutschland</p>
+          <p>SKA Insights GbR<br />Friedrich-Karl-Straße 25<br />50739 Köln<br />Deutschland</p>
           <h3 className="text-lg font-bold mt-4 mb-2">Vertreten durch die Gesellschafter:</h3>
           <p>Abdullah Şentürk, Metin Aydin</p>
           <h3 className="text-lg font-bold mt-4 mb-2">Kontakt</h3>
-          <p>E-Mail: info@ska-insights.com<br />Website: www.skainsights.de</p>
+          <p>E-Mail: info@skainsight.de<br />Website: www.skainsight.de</p>
           <h3 className="text-lg font-bold mt-4 mb-2">Umsatzsteuer-ID</h3>
           <p>Umsatzsteuer-Identifikationsnummer gemäß § 27 a Umsatzsteuergesetz:<br />DE123456789</p>
 
@@ -362,7 +362,7 @@ export const translations = {
           long_bio: "Through his many years of diplomatic service as Consul General in Cologne and as Embassy Counselor in Berlin, Turhan Kaya has built close contacts with German and Turkish business, economic, political, and media circles over the last decade. His deep understanding of both cultures enables him to convey values and visions at the highest level, build trust, and promote projects through strategic networks.",
           skills: ["Negotiation Techniques", "Networking & Public Affairs", "Political Analysis", "Project Management", "Organizational Planning", "Crisis Management"],
           contact: {
-            email: "info@ska-insights.de"
+            email: "info@skainsight.de"
           },
           cv: [
             {
@@ -412,7 +412,7 @@ export const translations = {
           long_bio: "Metin Aydin is an experienced corporate leader with a strong focus on personnel and organizational development. At Deutsche Telekom, he is responsible for strategic skill development to make the company future-proof. As Chairman of NETU West, he is also committed to networking European-Turkish companies.",
           skills: ["Strategic Skill Management", "Talent & Leadership Development", "Change Management", "Agile Transformation", "Corporate Recruiting", "Sales Strategy"],
           contact: {
-            email: "info@ska-insights.de"
+            email: "info@skainsight.de"
           },
           cv: [
             {
@@ -457,7 +457,7 @@ export const translations = {
         send: "Send Message",
         sending: "Sending..."
       },
-      meta: "Or write directly to: info@ska-insights.com",
+      meta: "Or write directly to: info@skainsight.de",
       success: "Thank you! Your message has been received.",
       error: "Error sending message.",
       geminiCta: "Generate Strategic Insights",
@@ -592,7 +592,7 @@ export const translations = {
           long_bio: "Köln'de Başkonsolos ve Berlin'de Elçilik Müsteşarı olarak uzun yıllara dayanan diplomatik hizmeti sayesinde Turhan Kaya, son on yılda Alman ve Türk iş, ekonomi, siyaset ve medya çevreleriyle yakın temaslar kurmuştur. Her iki kültürü derinlemesine anlaması, en üst düzeyde değerleri ve vizyonları aktarmasına, güven oluşturmasına ve stratejik ağlar aracılığıyla projeleri teşvik etmesine olanak tanımaktadır.",
           skills: ["Müzakere Teknikleri", "Ağ Kurma ve Halkla İlişkiler", "Siyasi Analiz", "Proje Yönetimi", "Organizasyon Planlaması", "Kriz Yönetimi"],
           contact: {
-            email: "info@ska-insights.de"
+            email: "info@skainsight.de"
           },
           cv: [
             {
@@ -642,7 +642,7 @@ export const translations = {
           long_bio: "Metin Aydın, personel ve organizasyonel gelişim odaklı deneyimli bir kurumsal yöneticidir. Deutsche Telekom'da şirketi geleceğe hazırlamak için stratejik yetenek gelişiminden sorumludur. BizNet e.V. Kurucu Üyesi olarak, Avrupalı-Türk şirketlerinin ağ oluşturmasına da kendini adamıştır.",
           skills: ["Stratejik Beceri Yönetimi", "Yetenek ve Liderlik Gelişimi", "Değişim Yönetimi", "Çevik Dönüşüm", "Kurumsal İşe Alım", "Satış Stratejisi"],
           contact: {
-            email: "info@ska-insights.de"
+            email: "info@skainsight.de"
           },
           cv: [
             {
@@ -687,7 +687,7 @@ export const translations = {
         send: "Mesaj Gönder",
         sending: "Gönderiliyor..."
       },
-      meta: "Veya doğrudan yazın: info@ska-insights.com",
+      meta: "Veya doğrudan yazın: info@skainsight.de",
       success: "Teşekkürler! Mesajınız alındı.",
       error: "Mesaj gönderilirken hata oluştu.",
       geminiCta: "Stratejik Analiz Oluştur",
