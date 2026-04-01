@@ -1,12 +1,12 @@
-import React, { useState, useEffect, useRef } from "react";
+import React, { useState, useEffect } from "react";
 import { translations } from './data/translations.jsx';
-import { referenceItems } from './data/references';
+
 import { serviceIcons } from './components/Icons';
 import AnimatedWrapper from './components/AnimatedWrapper';
 import Modal from './components/Modal';
 import ContactForm from './components/ContactForm';
 import ScrollToTopButton from './components/ScrollToTopButton';
-import { LogoIcon, ArrowRightIcon, ArrowLeftIcon, CheckCircleIcon, BriefcaseIcon, BrainCircuitIcon } from './components/Icons';
+import { LogoIcon, ArrowRightIcon } from './components/Icons';
 
 // --- Reusable Components ---
 const Section = ({ id, children, className = "" }) => (
@@ -174,174 +174,6 @@ const HomePage = ({ t, onServiceClick }) => (
   </>
 );
 
-const AboutPage = ({ t }) => {
-  const [expandedMember, setExpandedMember] = useState(null);
-
-  useEffect(() => {
-    window.scrollTo(0, 0);
-  }, []);
-
-  return (
-    <div className="bg-gradient-to-b from-blue-950 via-blue-900 to-blue-950 text-white min-h-screen">
-      {/* Hero Section */}
-      <section className="relative py-24 md:py-32 overflow-hidden">
-        <div className="absolute inset-0 bg-gradient-to-br from-blue-800/20 via-transparent to-blue-900/20"></div>
-        <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
-          <AnimatedWrapper className="text-center">
-            <div className="inline-block px-4 py-2 bg-blue-800/30 backdrop-blur-sm rounded-full border border-blue-700/50 text-sm font-semibold uppercase tracking-widest text-blue-300 mb-6">
-              {t.team.title}
-            </div>
-            <h1 className="text-5xl md:text-6xl font-black tracking-tight text-white mb-6 bg-clip-text text-transparent bg-gradient-to-r from-white to-blue-200">
-              {t.mission.note}
-            </h1>
-            <p className="text-xl text-blue-200 max-w-3xl mx-auto leading-relaxed">
-              {t.mission.text}
-            </p>
-          </AnimatedWrapper>
-        </div>
-      </section>
-
-      {/* About Section - Team Expertise */}
-      <section className="py-16 md:py-20 bg-gradient-to-b from-blue-900 to-blue-950 relative">
-        <div className="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8">
-          <AnimatedWrapper className="text-center">
-            <h2 className="text-3xl md:text-4xl font-black tracking-tight text-white mb-8">
-              {t.about.title}
-            </h2>
-            <div className="space-y-6 text-lg text-blue-200 leading-relaxed max-w-3xl mx-auto">
-              {t.about.text.split('\n\n').map((paragraph, index) => (
-                <p key={index}>{paragraph}</p>
-              ))}
-            </div>
-          </AnimatedWrapper>
-        </div>
-      </section>
-
-      {/* Founders Grid */}
-      <section className="py-20 md:py-28 relative">
-        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-          <div className="grid md:grid-cols-3 gap-8">
-            {t.team.members.map((member, i) => (
-              <AnimatedWrapper key={member.id} style={{ transitionDelay: `${i * 100}ms` }}>
-                <div className="group relative rounded-3xl overflow-hidden bg-gradient-to-br from-blue-900/90 to-blue-950/90 backdrop-blur-xl border border-blue-700/30 hover:border-blue-600/50 transition-all duration-500 shadow-2xl hover:shadow-blue-900/50 hover:-translate-y-2">
-                  {/* Decorative gradient overlay */}
-                  <div className="absolute inset-0 bg-gradient-to-br from-blue-500/5 via-transparent to-purple-500/5 opacity-0 group-hover:opacity-100 transition-opacity duration-500"></div>
-
-                  {/* Member Header */}
-                  <div className="relative p-8 text-center">
-                    <div className="relative inline-block mb-6">
-                      <div className="absolute inset-0 bg-gradient-to-br from-blue-500 to-purple-600 rounded-full blur-xl opacity-30 group-hover:opacity-50 transition-opacity"></div>
-                      <img
-                        src={member.img}
-                        alt={member.name}
-                        className="relative w-36 h-36 rounded-full object-cover ring-4 ring-blue-700/50 group-hover:ring-blue-600 transition-all duration-300"
-                      />
-                    </div>
-
-                    <h3 className="text-2xl font-bold text-white mb-2">{member.name}</h3>
-                    <p className="text-blue-300 font-medium text-sm mb-6">{member.role}</p>
-
-                    {/* Bio Short - Compact */}
-                    <div className="space-y-2 text-sm">
-                      {member.bio_short.map((item, index) => (
-                        <div key={index} className="flex items-center justify-center gap-2 text-blue-200">
-                          <div className="w-1.5 h-1.5 rounded-full bg-blue-400"></div>
-                          <span>{item}</span>
-                        </div>
-                      ))}
-                    </div>
-                  </div>
-
-                  {/* Expandable Section */}
-                  <div className="relative border-t border-blue-700/30">
-                    <button
-                      onClick={() => setExpandedMember(expandedMember === member.id ? null : member.id)}
-                      className="w-full px-8 py-4 text-sm font-semibold text-blue-300 hover:text-white hover:bg-blue-800/30 transition-all duration-300 flex items-center justify-between group/btn backdrop-blur-sm"
-                    >
-                      <span>{expandedMember === member.id ? 'Weniger anzeigen' : 'Mehr erfahren'}</span>
-                      <svg
-                        className={`w-5 h-5 transition-transform duration-300 group-hover/btn:scale-110 ${expandedMember === member.id ? 'rotate-180' : ''}`}
-                        fill="none"
-                        stroke="currentColor"
-                        viewBox="0 0 24 24"
-                      >
-                        <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M19 9l-7 7-7-7" />
-                      </svg>
-                    </button>
-
-                    {expandedMember === member.id && (
-                      <div className="px-8 pb-8 space-y-6 animate-fadeIn bg-blue-950/50 backdrop-blur-sm">
-                        {/* Long Bio - More compact */}
-                        <div className="pt-4">
-                          <h4 className="text-sm font-bold text-blue-300 uppercase tracking-wider mb-3">Über {member.name.split(' ')[0]}</h4>
-                          <p className="text-blue-200 text-sm leading-relaxed line-clamp-6">{member.long_bio}</p>
-                        </div>
-
-                        {/* Skills - Compact badges */}
-                        <div>
-                          <h4 className="text-sm font-bold text-blue-300 uppercase tracking-wider mb-3 flex items-center gap-2">
-                            <svg className="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                              <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M9.663 17h4.673M12 3v1m6.364 1.636l-.707.707M21 12h-1M4 12H3m3.343-5.657l-.707-.707m2.828 9.9a5 5 0 117.072 0l-.548.547A3.374 3.374 0 0014 18.469V19a2 2 0 11-4 0v-.531c0-.895-.356-1.754-.988-2.386l-.548-.547z" />
-                            </svg>
-                            <span>Kompetenzen</span>
-                          </h4>
-                          <div className="flex flex-wrap gap-1.5">
-                            {member.skills.slice(0, 4).map(skill => (
-                              <span
-                                key={skill}
-                                className="bg-gradient-to-r from-blue-800/80 to-blue-700/80 text-blue-100 text-xs font-medium px-3 py-1 rounded-full border border-blue-600/30"
-                              >
-                                {skill}
-                              </span>
-                            ))}
-                          </div>
-                        </div>
-
-                        {/* CV Timeline - Minimal */}
-                        <div>
-                          <h4 className="text-sm font-bold text-blue-300 uppercase tracking-wider mb-3 flex items-center gap-2">
-                            <svg className="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                              <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M21 13.255A23.931 23.931 0 0112 15c-3.183 0-6.22-.62-9-1.745M16 6V4a2 2 0 00-2-2h-4a2 2 0 00-2 2v2m4 6h.01M5 20h14a2 2 0 002-2V8a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z" />
-                            </svg>
-                            <span>Stationen</span>
-                          </h4>
-                          <div className="space-y-3">
-                            {member.cv.slice(0, 2).map((item, index) => (
-                              <div key={index} className="pl-4 border-l-2 border-blue-700/50">
-                                <p className="text-xs font-semibold text-blue-400">{item.period}</p>
-                                <h5 className="text-sm font-bold text-white mt-1">{item.title}</h5>
-                                <p className="text-xs text-blue-300">{item.company}</p>
-                              </div>
-                            ))}
-                          </div>
-                        </div>
-
-                        {/* Contact - Simplified */}
-                        {member.contact && (
-                          <div className="pt-4 border-t border-blue-700/30">
-                            <a
-                              href={`mailto:${member.contact.email}`}
-                              className="w-full inline-flex items-center justify-center gap-2 px-4 py-3 bg-gradient-to-r from-blue-600 to-blue-700 hover:from-blue-500 hover:to-blue-600 text-white rounded-xl text-sm font-semibold transition-all duration-300 shadow-lg hover:shadow-blue-600/50 group/email"
-                            >
-                              <svg className="w-4 h-4 group-hover/email:scale-110 transition-transform" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                                <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M3 8l7.89 4.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z" />
-                              </svg>
-                              <span>Kontakt aufnehmen</span>
-                            </a>
-                          </div>
-                        )}
-                      </div>
-                    )}
-                  </div>
-                </div>
-              </AnimatedWrapper>
-            ))}
-          </div>
-        </div>
-      </section>
-    </div>
-  );
-};
 
 
 // --- Main App Component: Manages state and routing ---
@@ -424,11 +256,6 @@ export default function App() {
 
   const handleServiceClick = (service) => setSelectedService(service);
 
-  const handleAboutClick = async (e) => {
-    e.preventDefault();
-    setView('about');
-  };
-
 
   const handleLegalClick = (type) => {
     setLegalContent({ title: t[type].title, content: t[type].content });
@@ -437,12 +264,8 @@ export default function App() {
 
   const handleNavClick = async (e, sectionId) => {
     e.preventDefault();
-    if (sectionId === 'about') {
-      setView('about');
-    } else {
-      if (view !== 'home') setView('home');
-      setTimeout(() => document.getElementById(sectionId)?.scrollIntoView({ behavior: 'smooth' }), 50);
-    }
+    if (view !== 'home') setView('home');
+    setTimeout(() => document.getElementById(sectionId)?.scrollIntoView({ behavior: 'smooth' }), 50);
   };
 
   const handleLogoClick = async (e) => {
@@ -494,7 +317,6 @@ export default function App() {
       </header>
 
       {view === 'home' && <HomePage t={t} onServiceClick={handleServiceClick} />}
-      {view === 'about' && <AboutPage t={t} />}
 
       {selectedService && (
         <Modal
@@ -516,7 +338,7 @@ export default function App() {
         </Modal>
       )}
 
-      <Section id="contact" className={view === 'teamDetail' ? 'bg-blue-900' : 'bg-blue-950'}>
+      <Section id="contact" className="bg-blue-950">
         <div className="max-w-3xl mx-auto px-4 sm:px-6 lg:px-8">
           <ContactForm
             t={t}

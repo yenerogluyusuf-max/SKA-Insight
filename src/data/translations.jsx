@@ -6,7 +6,6 @@ export const translations = {
       mission: "Mission",
       services: "Leistungen",
       approach: "Ansatz",
-      about: "Über uns",
       contact: "Kontakt"
     },
     hero: {
@@ -220,8 +219,8 @@ export const translations = {
         <>
           <h3 className="text-lg font-bold mb-2">Angaben gemäß § 5 TMG</h3>
           <p>SKA Insight GbR<br />Friedrich-Karl-Straße 25<br />50739 Köln<br />Deutschland</p>
-          <h3 className="text-lg font-bold mt-4 mb-2">Vertreten durch die Gesellschafter:</h3>
-          <p>Abdullah Şentürk, Metin Aydin</p>
+          <h3 className="text-lg font-bold mt-4 mb-2">Vertreten durch den Gesellschafter:</h3>
+          <p>Abdullah Şentürk</p>
           <h3 className="text-lg font-bold mt-4 mb-2">Kontakt</h3>
           <p>E-Mail: info@skainsight.de<br />Website: www.skainsight.de</p>
           <h3 className="text-lg font-bold mt-4 mb-2">Umsatzsteuer-ID</h3>
@@ -265,7 +264,6 @@ export const translations = {
       mission: "Mission",
       services: "Services",
       approach: "Approach",
-      about: "About",
       contact: "Contact"
     },
     hero: {
@@ -495,7 +493,6 @@ export const translations = {
       mission: "Misyon",
       services: "Hizmetler",
       approach: "Yaklaşım",
-      about: "Hakkımızda",
       contact: "İletişim"
     },
     hero: {
