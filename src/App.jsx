@@ -43,12 +43,6 @@ const HomePage = ({ t, onServiceClick }) => (
                 {t.hero.ctaPrimary}
                 <ArrowRightIcon className="w-5 h-5" />
               </a>
-              <a
-                href="#about"
-                className="px-8 py-4 rounded-full border-2 border-white/30 backdrop-blur-sm text-white text-base font-semibold hover:bg-white/10 transition-all duration-300"
-              >
-                Mehr erfahren
-              </a>
             </div>
           </AnimatedWrapper>
         </div>
@@ -159,7 +153,7 @@ const HomePage = ({ t, onServiceClick }) => (
             Bereit für den nächsten Schritt?
           </h2>
           <p className="text-xl text-blue-100 mb-10 max-w-2xl mx-auto">
-            Lassen Sie uns gemeinsam Ihre Vision in die Realität umsetzen und nachhaltige Brücken zwischen Deutschland und der Türkei bauen.
+            Lassen Sie uns gemeinsam Ihre Vision in die Realität umsetzen und nachhaltige Brücken zwischen der Türkei, Deutschland und der EU bauen.
           </p>
           <a
             href="#contact"

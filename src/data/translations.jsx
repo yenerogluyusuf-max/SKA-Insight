@@ -11,12 +11,12 @@ export const translations = {
     hero: {
       kicker: "Beratung · Projektentwicklung · Management",
       title: <>Brücken bauen.<br/>Werte schaffen.</>,
-      subtitle: "Wir konzipieren und realisieren Strukturen zur Stärkung der Geschäftstätigkeit zwischen Deutschland und der Türkei.",
+      subtitle: "Wir konzipieren und realisieren Strukturen zur Stärkung der Geschäftstätigkeit zwischen der Türkei, Deutschland und der EU.",
       ctaPrimary: "Gespräch vereinbaren"
     },
     mission: {
       title: "Unsere Mission",
-      text: "Der Aufbau nachhaltiger Strukturen, die die unternehmerischen und wirtschaftlichen Beziehungen zwischen Deutschland und der Türkei stärken, erfordert Zeit, Erfahrung und eine klare Vision. Wir bringen Unternehmen und Wirtschaftsakteure zusammen, um positive Ergebnisse für alle Beteiligten zu erzielen.",
+      text: "Der Aufbau nachhaltiger Strukturen, die grenzüberschreitend unternehmerische und wirtschaftliche Beziehungen stärken, erfordert Zeit, Erfahrung und eine klare Vision.",
       note: "Wir schaffen Verbindungen, die Bestand haben."
     },
     services: {
@@ -47,8 +47,8 @@ export const translations = {
       kicker: "Wie wir arbeiten",
       points: [
         {
-          head: "Interkulturelle Expertise",
-          body: "Tiefgreifendes Verständnis für rechtliche Rahmenbedingungen, Business-Etikette und Kultur beider Länder."
+          head: "Umfassende Expertise",
+          body: "Tiefgreifendes Verständnis für rechtliche Rahmenbedingungen, Businessetikette und -kultur."
         },
         {
           head: "Wirkungsvolle Netzwerke",

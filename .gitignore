@@ -92,3 +92,5 @@ node-v*/
 ~$*
 *.docx
 *.zip
+.vercel
+.env*.local
